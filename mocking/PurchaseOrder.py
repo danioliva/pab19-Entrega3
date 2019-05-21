@@ -1,4 +1,4 @@
-from Store import Store
+import mocking.Store
 """
 Mocking example
 """
@@ -9,6 +9,6 @@ class PurchaseOrder:
         self.product_name = product_name
         self.amount = amount
 
-    def buy(self, store:Store)->None:
+    def buy(self, store: mocking.Store)->None:
         if store.are_there_enough_products(self.product_name, self.amount):
             store.remove_products(self.product_name, self.amount)

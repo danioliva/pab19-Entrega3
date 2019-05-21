@@ -2,8 +2,8 @@
 import unittest
 from unittest.mock import MagicMock
 
-from PurchaseOrder import PurchaseOrder
-from Store import Store
+from mocking import PurchaseOrder
+from mocking import Store
 
 
 class TestMethods(unittest.TestCase):
